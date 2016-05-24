@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_name"
+                android:layout_marginTop="20dp"
+                android:inputType="text" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/check_media"
+                android:hint="@string/mm"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/check_agent"
+                android:hint="@string/ag"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/check_photographer"
+                android:hint="@string/ph"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/check_writer"
+                android:hint="@string/wr"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/check_musician"
+                android:hint="@string/mu"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/check_engineer"
+                android:hint="@string/eng"/>
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/check_astronaut"
+                android:hint="@string/ast"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check"
+                android:textAllCaps="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#800000"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_age"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+                <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/age1"
+                android:hint="@string/age1"/>
+                <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/age2"
+                android:hint="@string/age2"/>
+                <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/age3"
+                android:hint="@string/age3"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_exp"
+                    android:padding="10dp"
+                    android:textAllCaps="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/exp1"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/exp1"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/exp2"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/exp2"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/exp3"
+                    android:hint="@string/exp3"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/spin_button"
+                android:onClick="check_out"/>
+
+            <TextView
+                android:id="@+id/final_output"
+                android:layout_width="match_parent"
+                android:textStyle="bold|italic"
+                android:textColor="#0000ff"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:background="#ffe9ec"
+                android:fontFamily="serif"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+</ScrollView>

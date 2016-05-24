@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#545454"
+    tools:context=".MainActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+
+        tools:context="com.example.android.examshell.MainActivity">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/media_ad"
+            android:id="@+id/media1"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:onClick="media"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/sage"
+            android:onClick="agent"
+            android:scaleType="centerCrop"
+            android:id="@+id/agent1"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/p2"
+            android:scaleType="centerCrop"
+            android:onClick="photo"
+            android:id="@+id/photo1"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/musician"
+            android:scaleType="centerCrop"
+            android:onClick="music"
+            android:id="@+id/music1"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/eg"
+            android:scaleType="centerCrop"
+            android:onClick="engine"
+            android:id="@+id/engine1"/>
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/writer"
+            android:scaleType="centerCrop"
+            android:onClick="writer"
+            android:id="@+id/writer1"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/au"
+            android:scaleType="centerCrop"
+            android:onClick="aus"
+            android:id="@+id/aus1"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

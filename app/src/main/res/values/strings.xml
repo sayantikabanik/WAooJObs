@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">WAooJObs</string>
+    <string name="spin_button">Results</string>
+    <string name="enter_name">ENTER NAME</string>
+    <string name="enter_age">AGE</string>
+    <string name="enter_exp">EXPERIENCE</string>
+    <string name="CLICK_EXPLORE">Lets Explore More</string>
+    <string name="COURSES">Course Details</string>
+    <string name="CHECK_ELIGIBILITY">CHECK ELIGIBILITY</string>
+    <string name="space_title">My world grows in vacuum!\n I gaze at the sky,\n It gives me pleasure\n without been shy!</string>
+    <string name="engineer_title">I Innovate to Motivate\n Tech to Talk!\n Marvels to make,\n World at Stake!</string>
+    <string name="agent_title">Hola Detective\n Shh__Quite \n Lets Investigate your passion</string>
+    <string name="media_title">G8 option Mass Media\n Huge scope to optimise \n Develop inter personal Skills</string>
+    <string name="music_title">U Rock :)Pleases Me\n Entertains Soul\n Spreads peace!</string>
+    <string name="photo_title">A pic reflects Heart :d\n A smile adds Beauty\n Passion Carves Destiny\n</string>
+    <string name="MY_BLOG">Enter my world.....\n I write to Teach\n And Teach To Learn\n</string>
+    <string name="mm">Mass Media</string>
+    <string name="ag">Detective</string>
+    <string name="ph">Photographer</string>
+    <string name="wr">Writer</string>
+    <string name="mu">Musician</string>
+    <string name="eng">Cool Engineer</string>
+    <string name="ast">Space Enthusiast</string>
+    <string name="check">Check Boxes That Suits</string>
+    <string name="age1">15-18</string>
+    <string name="age2">19-30</string>
+    <string name="age3">30+</string>
+    <string name="exp1">0-1</string>
+    <string name="exp2">2-5</string>
+    <string name="exp3">5+</string>
+
+</resources>
