@@ -20,3 +20,5 @@ How to proceed with the app-
 *)choose the desired button from the mentioned
 --as per selection user in directed to respective webpages
 *)The last botton (CHECK ELIGIBILITY) enables user to check few boxes and get the result
+![image](https://github.com/sayantikabanik/WAooJObs/commit/af7e96378bddbae7c2e2fb919469a6d22ad80d60)
+
