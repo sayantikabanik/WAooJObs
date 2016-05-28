@@ -1,6 +1,6 @@
-# WAooJObs__
-BRIEF DESCRIPTION-__
-The app guides the user to explore jobs that are often neglected in terms of scope.__
+# WAooJObs</br>
+BRIEF DESCRIPTION-<\br>
+The app guides the user to explore jobs that are often neglected in terms of scope.
 It also gives brief outline about required qualifications.__
 In turn gives the best suited job based on age and Experience.__
 
