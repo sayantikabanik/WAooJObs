@@ -12,6 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by USER on 18-05-2016.
@@ -24,7 +25,6 @@ public class ButtonActivity extends MainActivity implements View.OnClickListener
     String name;
     TextView output;
 
-    int age_num, experience_num;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +50,7 @@ public class ButtonActivity extends MainActivity implements View.OnClickListener
     }
 
     public void check_out(View v) {
+
         age01 = age1.isChecked();
         age02 = age2.isChecked();
         age03 = age3.isChecked();
@@ -65,84 +66,85 @@ public class ButtonActivity extends MainActivity implements View.OnClickListener
         photox = photo.isChecked();
         Editable nameEditable = name_of.getText();
         name = nameEditable.toString();
+
+
+
         //cases according to which output/results will be displayed on to the user
-
         if (mediax == true) {
-            if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
-                output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Student Editor" + "\n" + "\t" + "-Data Entry Operator" + "\n" + "All D Best:)");
-            } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
-                output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Digital Marketing" + "\n" + "\t" + "-Data Spec Analyst" + "\n" + "\t" + "-Communication Specialist" + "\n" + "All D Best:)");
-            } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
-                output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-PR Officer" + "\n" + "\t" + "-Film Director" + "\n" + "\t" + "-TV Correspondent" + "\n" + "All D Best:)");
-            } else {
-                output.setText("Invalid Selection:(");
-            }
+                if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
+                    output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Student Editor" + "\n" + "\t" + "-Data Entry Operator" + "\n" + "All D Best:)");
+                } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
+                    output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Digital Marketing" + "\n" + "\t" + "-Data Spec Analyst" + "\n" + "\t" + "-Communication Specialist" + "\n" + "All D Best:)");
+                } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
+                    output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-PR Officer" + "\n" + "\t" + "-Film Director" + "\n" + "\t" + "-TV Correspondent" + "\n" + "All D Best:)");
+                } else {
+                    output.setText("Invalid Selection:(");
+                }
 
-        } else if (agentx == true) {
-            if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
-                output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Cyber Security Expert" + "\n" + "All D Best:)");
-            } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
-                output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Special Agent" + "\n" + "\t" + "-Criminal Investigator" + "\n" + "All D Best:)");
-            } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
-                output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Country Sheriff" + "\n" + "\t" + "-Criminal Investigator" + "\n" + "All D Best:)");
-            } else {
-                output.setText("Invalid Selection:(");
+            } else if (agentx == true) {
+                if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
+                    output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Cyber Security Expert" + "\n" + "All D Best:)");
+                } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
+                    output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Special Agent" + "\n" + "\t" + "-Criminal Investigator" + "\n" + "All D Best:)");
+                } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
+                    output.setText("Hola!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Country Sheriff" + "\n" + "\t" + "-Criminal Investigator" + "\n" + "All D Best:)");
+                } else {
+                    output.setText("Invalid Selection:(");
+                }
+            } else if (musicx == true) {
+                if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Music Composer" + "\n" + "\t" + "-Rock Star" + "\n" + "\t" + "-Background Singer" + "\n" + "All D Best:)");
+                } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Music Composer" + "\n" + "\t" + "-Production Music Composer" + "\n" + "\t" + "-Background Singer" + "\n" + "All D Best:)");
+                } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Music Composer" + "\n" + "\t" + "-Music Therapist" + "\n" + "\t" + "-Sound Designer" + "\n" + "All D Best:)");
+                } else {
+                    output.setText("Invalid Selection:(");
+                }
+            } else if (writerx == true) {
+                if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Creative Writer" + "\n" + "\t" + "-Freelance Copywriter" + "\n" + "All D Best:)");
+                } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Creative Writer" + "\n" + "\t" + "-Proof Reader" + "\n" + "\t" + "-Content Developer" + "\n" + "All D Best:)");
+                } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Creative Writer" + "\n" + "\t" + "-Proof Reader" + "\n" + "\t" + "-Content Developer" + "\n" + "All D Best:)");
+                } else {
+                    output.setText("Invalid Selection:(");
+                }
+            } else if (photox == true) {
+                if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-An Internship" + "\n" + "\t" + "-Freelance Photographer" + "\n" + "All D Best:)");
+                } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Fashion Photographer" + "\n" + "\t" + "-Assistant Photographer" + "\n" + "\t" + "-Product Photographer" + "\n" + "All D Best:)");
+                } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Fashion Photographer" + "\n" + "\t" + "-Assistant Photographer" + "\n" + "\t" + "-Product Photographer" + "\n" + "All D Best:)");
+                } else {
+                    output.setText("Invalid Selection:(");
+                }
+            } else if (engx == true) {
+                if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-An Internship" + "\n" + "\t" + "-Student Developer" + "\n" + "All D Best:)");
+                } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Executive Engineer" + "\n" + "\t" + "-Software Engineer" + "\n" + "\t" + "...list is huge" + "\n" + "All D Best:)");
+                } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Executive Engineer" + "\n" + "\t" + "-Software Engineer" + "\n" + "\t" + "...list is huge" + "\n" + "All D Best:)");
+                } else {
+                    output.setText("Invalid Selection:(");
+                }
+            } else if (astx == true) {
+                if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "Celestial Body Viewer" + "\n" + "\t" + "-Student Developer/Analyst" + "\n" + "All D Best:)");
+                } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Astronaut" + "\n" + "\t" + "-Astrophysicist" + "\n" + "\t" + "...Keep Exploring" + "\n" + "All D Best:)");
+                } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
+                    output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Astronaut" + "\n" + "\t" + "-Astrophysicist" + "\n" + "\t" + "...Keep Exploring" + "\n" + "All D Best:)");
+                } else {
+                    output.setText("Invalid Selection:(");
+                }
+
             }
-        } else if (musicx == true) {
-            if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Music Composer" + "\n" + "\t" + "-Rock Star" + "\n" + "\t" + "-Background Singer" + "\n" + "All D Best:)");
-            } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Music Composer" + "\n" + "\t" + "-Production Music Composer" + "\n" + "\t" + "-Background Singer" + "\n" + "All D Best:)");
-            } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Music Composer" + "\n" + "\t" + "-Music Therapist" + "\n" + "\t" + "-Sound Designer" + "\n" + "All D Best:)");
-            } else {
-                output.setText("Invalid Selection:(");
-            }
-        } else if (writerx == true) {
-            if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Creative Writer" + "\n" + "\t" + "-Freelance Copywriter" + "\n" + "All D Best:)");
-            } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Creative Writer" + "\n" + "\t" + "-Proof Reader" + "\n" + "\t" + "-Content Developer" + "\n" + "All D Best:)");
-            } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Creative Writer" + "\n" + "\t" + "-Proof Reader" + "\n" + "\t" + "-Content Developer" + "\n" + "All D Best:)");
-            } else {
-                output.setText("Invalid Selection:(");
-            }
-        } else if (photox == true) {
-            if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-An Internship" + "\n" + "\t" + "-Freelance Photographer" + "\n" + "All D Best:)");
-            } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Fashion Photographer" + "\n" + "\t" + "-Assistant Photographer" + "\n" + "\t" + "-Product Photographer" + "\n" + "All D Best:)");
-            } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Fashion Photographer" + "\n" + "\t" + "-Assistant Photographer" + "\n" + "\t" + "-Product Photographer" + "\n" + "All D Best:)");
-            } else {
-                output.setText("Invalid Selection:(");
-            }
-        } else if (engx == true) {
-            if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-An Internship" + "\n" + "\t" + "-Student Developer" + "\n" + "All D Best:)");
-            } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Executive Engineer" + "\n" + "\t" + "-Software Engineer" + "\n" + "\t" + "...list is huge" + "\n" + "All D Best:)");
-            } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Executive Engineer" + "\n" + "\t" + "-Software Engineer" + "\n" + "\t" + "...list is huge" + "\n" + "All D Best:)");
-            } else {
-                output.setText("Invalid Selection:(");
-            }
-        } else if (astx == true) {
-            if ((age01 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "Celestial Body Viewer" + "\n" + "\t" + "-Student Developer/Analyst" + "\n" + "All D Best:)");
-            } else if (((age02 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true)))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Astronaut" + "\n" + "\t" + "-Astrophysicist" + "\n" + "\t" + "...Keep Exploring" + "\n" + "All D Best:)");
-            } else if ((((age03 == true) && ((exp01 == true) || (exp02 == true) || (exp03 == true))))) {
-                output.setText("Hola\n Great Selection:D!" + "\n" + name + "\n" + "You Can Opt For" + "\n" + "\t" + "-Astronaut" + "\n" + "\t" + "-Astrophysicist" + "\n" + "\t" + "...Keep Exploring" + "\n" + "All D Best:)");
-            } else {
-                output.setText("Invalid Selection:(");
-            }
-        } else {
-            output.setText("Invalid Selection:(");
         }
     }
-}
 
 
 

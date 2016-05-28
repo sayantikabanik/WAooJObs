@@ -48,7 +48,7 @@
         <ImageButton
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:src="@drawable/eg"
+            android:src="@drawable/gg"
             android:scaleType="centerCrop"
             android:onClick="engine"
             android:id="@+id/engine1"/>

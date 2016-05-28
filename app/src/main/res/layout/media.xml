@@ -7,20 +7,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/compic"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         android:src="@drawable/mmnext"
         android:visibility="visible"
         android:alpha=".30"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="5"
         android:id="@+id/word"
-        android:text="@string/media_title"
         android:textColor="#000000"
         android:textSize="25sp"
+        android:text="@string/media_title"
         android:textStyle="bold"
-        android:fontFamily="sans-serif-condensed"/>
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,12 +42,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_weight="1"
+
         >
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
+            android:textColor="#fff"
+            android:layout_marginBottom="8dp"
             android:text="@string/CLICK_EXPLORE"
+            android:background="@drawable/custom_button"
             android:id="@+id/Bextra"
             android:onClick="onClick"/>
         <Button
@@ -47,16 +59,24 @@
             android:layout_height="wrap_content"
             android:text="@string/COURSES"
             android:id="@+id/Bcource"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_style"
             android:onClick="onClick"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/CHECK_ELIGIBILITY"
-            android:background="@drawable/button_style"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button"
             android:id="@+id/Beligible"
             android:onClick="onClick"/>
+        </LinearLayout>
+
 
     </LinearLayout>
+
+
+
 
 
 

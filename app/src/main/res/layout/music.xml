@@ -12,42 +12,59 @@
         android:visibility="visible"
         android:alpha=".40"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="5"
         android:id="@+id/word"
         android:textColor="#000000"
         android:textSize="25sp"
         android:text="@string/music_title"
         android:textStyle="bold"
-        android:fontFamily="sans-serif-condensed"/>
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_weight="1"
         >
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
             android:text="@string/CLICK_EXPLORE"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
             android:id="@+id/Bextra"
             android:onClick="onClick"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/COURSES"
+            android:background="@drawable/button_style"
             android:id="@+id/Bcource"
+            android:layout_marginBottom="8dp"
             android:onClick="onClick"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_style"
+            android:background="@drawable/custom_button"
             android:text="@string/CHECK_ELIGIBILITY"
+            android:textColor="#fff"
             android:id="@+id/Beligible"
             android:onClick="onClick"/>
+        </LinearLayout>
 
     </LinearLayout>
+
 
 
 

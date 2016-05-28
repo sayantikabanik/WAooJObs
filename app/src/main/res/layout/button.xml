@@ -126,7 +126,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/spin_button"
-                android:onClick="check_out"/>
+                android:textColor="#fff"
+                android:onClick="check_out"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_button"/>
 
             <TextView
                 android:id="@+id/final_output"
@@ -135,7 +138,6 @@
                 android:textColor="#0000ff"
                 android:textSize="15sp"
                 android:padding="10dp"
-                android:background="#ffe9ec"
                 android:fontFamily="serif"
                 android:layout_height="wrap_content" />
 

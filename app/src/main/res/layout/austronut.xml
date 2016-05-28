@@ -12,10 +12,17 @@
         android:visibility="visible"
         android:alpha=".40"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="0dp"
         android:id="@+id/word"
+        android:layout_weight="5"
         android:textColor="#000000"
         android:text="@string/space_title"
         android:textSize="25sp"
@@ -25,27 +32,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_weight="1"
         >
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="300dp"
             android:text="@string/CLICK_EXPLORE"
             android:id="@+id/Bextra"
+            android:layout_marginBottom="8dp"
+            android:textColor="#fff"
+            android:background="@drawable/custom_button"
             android:onClick="onClick"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/COURSES"
             android:id="@+id/Bcource"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_style"
             android:onClick="onClick"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/CHECK_ELIGIBILITY"
             android:id="@+id/Beligible"
-            android:background="@drawable/button_style"
+            android:textColor="#FFF"
+            android:background="@drawable/custom_button"
             android:onClick="onClick"/>
+    </LinearLayout>
 
     </LinearLayout>
 
